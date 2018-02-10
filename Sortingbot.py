@@ -46,10 +46,7 @@ def getSort(content):
     try:
         r = requests.get('https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/effbf0c9-bdc3-47aa-bd6d-14d032481a1a',headers=headers, params=params)
         #print(r.json())
-        string = r.json()
-        return string
+        return(r.json())
     
     except Exception as e:
         print("[Errno {0}] {1}".format(e.errno, e.strerror))
-
-getSort("lunch")
