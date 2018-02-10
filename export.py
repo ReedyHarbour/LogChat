@@ -21,9 +21,6 @@ def format(d):
 			result += "\t- "+text.getActualTime()+"-"+text.user+": "+text.content+"\n"
 	return result
 
-#d = {(2018,2,3):["hello"],(2018,5,1):["3344"],(2017,3,15):["wuwuwu"]}
-#print(format(d))
-
 def export(alltext):
 	# write a file
 	result = ""
@@ -40,5 +37,3 @@ def export(alltext):
 def exportToTxt(result,path="Work.txt"):
 	writeFile(path, result)
 
-# result = "2015-2-3:\n \t - 5:03: Hello\n \t - 6:03: World!\n"
-# exportToTxt(result)
