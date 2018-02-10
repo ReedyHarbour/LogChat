@@ -40,7 +40,6 @@ class User(object):
 		return hash((self.name, self.defaultPhoto, self.selfPhoto))
 	def __eq__(self, other):
 		return self.name == other.name
-		
 
 class Text(object):
 	def __init__(self, user, content, time=time.localtime(), rank=None, mode=0):
