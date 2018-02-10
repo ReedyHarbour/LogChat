@@ -14,12 +14,13 @@ def filterByMode(allText, usefulMode=[1,2]):
 	modeList = [[] for i in range(6)]
 
 	for text in allText:
-		print("text", text.mode)
+
 		if text.mode in usefulMode:
 			modeList[text.mode].append(text)
 
 	return modeList
 
+# Return dictionary by current day
 def filterByTime(currMode):
 	#for currMode in modeList:
 	d = dict()
@@ -31,15 +32,12 @@ def filterByTime(currMode):
 
 	return d
 
+# Lose trash identified by sorting bot
 def filterBySortingBot(d, sortedTag):
 	newDict = dict()
-	print("original")
-	print(d)
 	for key in d:
 		for text in d[key]:
 			if text.sort in sortedTag:
 				d[key].remove(text)
 				
-	print("newDict")
-	print(d)
 	return d
