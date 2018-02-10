@@ -10,6 +10,8 @@ import user
 
 stylesheet=getSampleStyleSheet()
 
+# Formatting PDF files using reportlab
+
 def drawTime(textList, style):
 	newList = []
 	for text in textList:
@@ -22,6 +24,7 @@ def exportToPDF(alltext):
 	styles = getSampleStyleSheet()
 	styleN = styles['Normal']
 	styleH = styles['Heading1']
+	# Cited from https://www.reportlab.com/docs/reportlab-userguide.pdf
 	body = ParagraphStyle(fontName='Times', fontSize=12, name="TOCHeading1",
  			firstLineIndent=40, leading=16,spaceAfter = 6, spaceBefore = 6)
 	heading = ParagraphStyle(fontName='Times-Bold', fontSize=16, name="TOCHeading1",
@@ -56,6 +59,3 @@ def exportToPDF(alltext):
 	f = Frame(inch, inch, 7*inch, 9*inch)
 	f.addFromList(story,c)
 	c.save()
-
-# alltext=[user.Text("user","hello")]
-# exportToPDF(alltext)
