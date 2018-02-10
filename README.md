@@ -3,6 +3,7 @@ Repository for our tartanhacks 2018 project logchat, a new chat easy for groupwo
 ## Contributors
   Anita Li, Michelle Ma, Hesper Yin, Rebacca Pei
 ## Description
+https://youtu.be/y3u6zWmh7q4
   Our project is a chat platform designed for group of co-workers. Log Chat combines chat room and markdown editor. When wokers are chatting, their progress reports and notes are recorded can be maked down
   
   It uses socket to connect users, and users put in their id and name to enter the same chat room. 
