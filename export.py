@@ -5,11 +5,10 @@ import user
 from sort import *
 import os 
 
-# Get all text from another file
-# Delete after
-allText = []
+# sorted tag we use for sortingbot
 sortedTag = ["sleep, rest","greetings", "food, eat", "entertainment", "dirty langueas"]
 
+# cited from 15112 website
 def writeFile(path, contents):
 	with open(path, "wt") as f:
 		f.write(contents)
