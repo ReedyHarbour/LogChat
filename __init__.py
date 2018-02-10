@@ -1,7 +1,5 @@
 # events-example0.py
-
 # Barebones timer, mouse, and keyboard events
-
 
 
 from tkinter import *
@@ -143,7 +141,7 @@ def init(data):
 
     #######
 
-    #added by Ying Hang
+    #added by Hang Yin
 
     #######
 
@@ -339,21 +337,6 @@ def mousePressed(event, data):
 
             print("mode")
 
-        
-
-    
-
-        
-
-
-
-
-
-
-
-
-
-
 
 ######
 
@@ -447,13 +430,6 @@ def drawLargeButton(canvas, y, t):
 
     canvas.create_text(100, y-15, text = t, fill = "white", font = "Courier 20")
 
-    
-
-    
-
-    
-
-    
 
 def drawLine(canvas, y):
 
@@ -1048,9 +1024,6 @@ def drawText(canvas,data):
 
             break
 
-    
-
-
 
 ####################################
 
@@ -1142,11 +1115,6 @@ def run(width=700, height=700):
 
     timerFiredWrapper(canvas, data)
 
-    
-
-
-
-    
 
     # and launch the app
 
